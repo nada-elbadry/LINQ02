@@ -14,7 +14,7 @@ namespace Demo_LINQ02
             if (ReferenceEquals(x, y)) return true;
             return string.Equals(x, y, StringComparison.OrdinalIgnoreCase);
         }
-
+        //---------------------------------------------------------
         public int GetHashCode([DisallowNull] string obj)
         {
             return StringComparer.OrdinalIgnoreCase.GetHashCode(obj);
